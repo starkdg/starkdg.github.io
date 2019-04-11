@@ -1,0 +1,6 @@
+markdown: kramdown
+description: "Perceptual Hashing"
+theme: jekyll-theme-tactile
+repository: starkdg/starkdg.github.io
+permalink: /posts/:title
+email: starkd88@gmail.com

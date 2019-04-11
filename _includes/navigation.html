@@ -1,0 +1,14 @@
+
+<div class="sidenav" id="sidebar">
+  <nav>
+	<ul>
+	  <h1>Site</h1>
+	  <li><a href="/"><h1>Home</h1></a></li>
+	  <li><a href="/posts/"><h1>Posts</h1></a></li>
+	  <h1>Posts</h1>
+	  {% for post in site.posts %}
+          <li><a href="{{ post.url }}">{{ post.title | truncate:40 }}</a></li>
+	  {% endfor %}
+	</ul>
+  </nav>
+</div>
