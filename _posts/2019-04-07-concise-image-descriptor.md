@@ -189,7 +189,7 @@ So, how can this be improved?
 * Contractive Auto-encoder. Add a Jacobian norm as a regularization term to the learning process.
   The Jacobian matrix is a matrix of first derivatives of the hidden layer with respect to the
   weights. Its norm is a measure of rate of change of the hidden layer.  A regularization term
-  should theoretically smooth the area  around the immediate vicinity around each training sample.
+  should theoretically smooth the area  around the immediate vicinity of each training sample.
   
 
 I'll leave it at that for this post. Questions or comments can be sent to me at
