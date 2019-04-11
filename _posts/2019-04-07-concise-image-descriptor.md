@@ -189,10 +189,12 @@ So, how can this be improved?
 * Contractive Auto-encoder. Add a Jacobian norm as a regularization term to the learning process.
   The Jacobian matrix is a matrix of first derivatives of the hidden layer with respect to the
   weights. Its norm is a measure of rate of change of the hidden layer.  A regularization term
-  should theoretically a function in the immediate vicinity around each training sample.
+  should theoretically smooth the area  around the immediate vicinity around each training sample.
   
 
-I'll leave it at that for this post. Questions or comments can be sent to me at [Contact](mailto:starkd88@gmail.com)
+I'll leave it at that for this post. Questions or comments can be sent to me at
+
+[Contact](mailto:starkd88@gmail.com)
 
 
 [tf-slim]: https://github.com/tensorflow/models/tree/master/research/slim#Pretrained
