@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "On Extracting Concise Image Descriptors from Natural Images"
+title: On Extracting Concise Image Descriptors from Natural Images
+description: Image Descriptors
 author: starkdg
 date: 2019-04-07
 use_math: true
@@ -52,7 +53,7 @@ framework can be used to test the descriptors as well as the feature vector itse
 able to see just where the descriptors lose the ability to discriminate between images as well as compare
 the effectiveness of the new descriptors.  
 
-All code can be found in the github repository here: [github-repos][]
+All code can be found in the github repository here: [__View On GitHub__](https://github.com/starkdg/pyConvnetPhash)
 
 ## A Test Framework
 
@@ -179,12 +180,14 @@ with text overlay, compression, decimation, upscale and downscale - there are se
 It is noteworthy that the MH image hash is far superior in the bright, dark and histeq categories.
 
 
-# For Another Post
+# Ideas For Other Post
 
-So, how can this be improved?
+* Explore other models.
 
 * multiple layer auto-encoder. Try adding layers so as to diminish the features gradually.
   Like three layers 1792->1024->512->256 with a sigmoid activation in each layer.
+  However, my efforts so far have met with limited success in this area - at least, in terms
+  of this testing procedure.
 
 * Contractive Auto-encoder. Add a Jacobian norm as a regularization term to the learning process.
   The Jacobian matrix is a matrix of first derivatives of the hidden layer with respect to the
@@ -192,9 +195,9 @@ So, how can this be improved?
   should theoretically smooth the area  around the immediate vicinity of each training sample.
   
 
-I'll leave it at that for this post. Questions or comments can be sent to me at
+I'll leave it at that for this post. Questions or comments can be sent to me at [*Contact*](mailto:starkd88@gmail.com)
 
-[Contact](mailto:starkd88@gmail.com)
+Or simply reply in the issues on github: [*Comments and Suggestions*](https://github.com/starkdg/pyConvnetPhash/issues)
 
 
 [tf-slim]: https://github.com/tensorflow/models/tree/master/research/slim#Pretrained

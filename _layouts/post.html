@@ -9,7 +9,10 @@ layout: default
 </head>
 <body>
   {% include navigation.html %}
-  <p>{{ page.date | date_to_string }} - by {{ page.author }}</p>
+  <div>
+	<h1>{{ page.title }}</h1>
+	<p>{{ page.date | date_to_string }} - by {{ page.author }}</p>
+  </div>
   {{ content }}
 </body>
 

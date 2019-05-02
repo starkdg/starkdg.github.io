@@ -19,30 +19,54 @@ aside > p {
 
 /* sidebar menu */
 .sidenav {
-	 height: 100%;
-	width: 350px;
+	height:100%;
+	width: auto;
+	max-width: 200px;
 	position: fixed;
 	z-index: 1;
 	top: 0;
-	left: 0;
-	//background-color: #111;
+	right: 0;
 	overflow-x: hidden;
-	padding-top: 20px;			
+	padding-top: 60px;
 }
 
 /* The navigation menu links */
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 11px;
-  color: Teal;
+  font-size: 12px;
+  color: Linen;
   display: block;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-	color: SpringGreen;
+	color: DarkSlateBlue;
 	text-decoration: underline; 
+}
+
+.topnav {
+	overflow: hidden;
+}
+
+.topnav a {
+	float: center;
+	background-color: CadetBlue;
+	color: Linen;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnav a:hover {
+	color: DarkSlateBlue;
+	text-decoration: underline;
+}
+
+.topnav a:active {
+	background-color: DarkSlateBlue;
+	color: LightSlateBlue;
 }
 
 /* Style page content */
