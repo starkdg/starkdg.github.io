@@ -2,7 +2,12 @@ markdown: kramdown
 title: "PHash Blog"
 description: "perceptual hashing information"
 theme: jekyll-theme-modernist
+url: https://starkdg.github.io
 repository_url: starkdg/starkdg.github.io
 permalink: /posts/:title
 email: starkd88@gmail.com
 show_downloads: false
+
+plugins:
+  - jekyll-feed
+  
