@@ -10,4 +10,4 @@ show_downloads: false
 
 plugins:
   - jekyll-feed
-  
+  - jekyll-seo-tag  
