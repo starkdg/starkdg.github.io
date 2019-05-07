@@ -5,6 +5,7 @@ description: robust audio fingerprint indexing
 author: starkdg
 date: 2019-04-30
 use_math: true
+tags: [audio, java, audio-recognition]
 ---
 
 Audio track recognition is about identifying short audio clips among a larger  collection of indexed tracks.

@@ -5,6 +5,7 @@ description: Image Descriptors
 author: starkdg
 date: 2019-04-07
 use_math: true
+tags: [image, python, tensorflow, analysis]
 ---
 
 Image descriptors are essential for organizing a collection of images for the purpose
