@@ -1,18 +1,5 @@
 
 
-<div class="sidenav" id="side-navigation-bar">
-  <nav>
-	<ul>
-	  <h2>Past Posts</h2>
-	  {% for post in site.posts %}
-	  <li>
-		<a href="{{ post.url }}">{{ post.title | truncate: 30 }}</a>
-	  </li>
-	  {% endfor %}
-	</ul>
-  </nav>
-</div>
-
 <div class="topnav" id="top-navigation-bar">
   <a href="http://phash.org"><bold>Home</bold></a>
   <a href="/"><bold>About</bold></a>
