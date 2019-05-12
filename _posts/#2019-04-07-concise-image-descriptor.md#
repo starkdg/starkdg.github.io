@@ -203,8 +203,10 @@ matrix.  Here is the cumulative sum plot based on 4000 images (as compared to ju
 
 As you can see, while the overall shape of the plot remains the same - that is, the point of diminishing
 returns is still reached at around 250 leading eigenvectors - there is more variance in the smaller eigenvectors.
-This would explain why the ability to discriminate with respect to such distortion as vertical flipping is lost
-with as few as 500 leading eigenvectors.  
+This would explain why the ability to discriminate with r
+
+
+
 
 
 I'll leave it at that for this post. Questions or comments can be sent to me at [*Contact*](mailto:starkd88@gmail.com)
