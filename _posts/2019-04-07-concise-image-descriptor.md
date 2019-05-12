@@ -197,7 +197,7 @@ It is noteworthy that the MH image hash is far superior in the bright, dark and 
 
 
 Edit: It turns out the eigenvalue analysis is different when more images are considered for the covariance
-matrix.  Here is the cumulative sum plot based on 4000 images (as compared to just 500 images in above experiment):
+matrix.  Here is the cumulative sum plot based on 4000 images \(as compared to just 500 images in above experiment\):
 
 ![singular_values2](/resources/post_1/mobilenetv2-pca-by-svd-1792-256-singular_values2.png)
 
