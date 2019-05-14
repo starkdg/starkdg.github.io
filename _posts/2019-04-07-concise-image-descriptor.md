@@ -133,6 +133,24 @@ remains good.  By pca-256, it fails in noise, shear, occlusion with text overlay
 some crucial information in those dropped eigen vectors for those categories.  Notice how the metric steadily degrades going down
 the columns.
 
+## Analasis **UPDATE**
+
+It turns out that using more images to compute the covariance matrix - upon which the svd decomposition is based - does
+indeed change the above cumulative sum plot of eigen values. Here is the plot for 4000 images:
+
+![singular_values2](/resources/post_1/mobilenetv2-pca-by-svd-1792-256-singular_values2.png)
+
+As you can see, while the overall shape of the plot remains the same - that is, the point of diminishing
+returns is still reached at around 250 leading eigenvectors - there is more variance in the smaller eigenvectors.
+This would explain why the ability to discriminate with respect to such distortion as vertical flipping is lost
+with as few as 500 leading eigenvectors.  
+
+Fortunately, it doesn't appear to  have changed the results of our test:
+
+![table1a](/resources/post_1/mobilenetv2-pcabysvd-test_results-table1a.png)
+
+As a matter of fact, if anything, there appears to be some modest improvements. 
+
 ## Training Linear PCA models On a Large Set of Images
 
 Next, we train on a larger set of images. We use images from the [mirflickr25k][] data set of 25,000 images.
@@ -194,18 +212,6 @@ It is noteworthy that the MH image hash is far superior in the bright, dark and 
   The Jacobian matrix is a matrix of first derivatives of the hidden layer with respect to the
   weights. Its norm is a measure of rate of change of the hidden layer.  A regularization term
   should theoretically smooth the area  around the immediate vicinity of each training sample.
-
-
-Edit: It turns out the eigenvalue analysis is different when more images are considered for the covariance
-matrix.  Here is the cumulative sum plot based on 4000 images: 
-
-![singular_values2](/resources/post_1/mobilenetv2-pca-by-svd-1792-256-singular_values2.png)
-
-As you can see, while the overall shape of the plot remains the same - that is, the point of diminishing
-returns is still reached at around 250 leading eigenvectors - there is more variance in the smaller eigenvectors.
-This would explain why the ability to discriminate with respect to such distortion as vertical flipping is lost
-with as few as 500 leading eigenvectors.  
-
 
 I'll leave it at that for this post. Questions or comments can be sent to me at [*Contact*](mailto:starkd88@gmail.com)
 
