@@ -55,10 +55,15 @@ and the timestamps for where they actually occur in the stream.
 The next two columns indicate the clips that get recognized  
 along with their timestamps.
 
+
 A black font represents correct detections; a red font  
 represents false positives; and blue is for false negatives.
 
+
+
 <div class="viewport" id="includedContent"></div>
+
+
 
 The only one that failed to be detected was a McDonald's  
 commercial, called "Uber Eats".  The only thing noteworthy  
@@ -74,7 +79,7 @@ information preserved to differentiate the two in real-time.
 
 ## A few notes for further study:
 
-* While the fingerprinting method is fairly robust to many  
+*While the fingerprinting method is fairly robust to many  
 distortions, it is not robust to changes in the screen format.  
 In other words, many broadcast streams manipulate the screen  
 format to include varying amounts of black space in the margins.  
@@ -84,7 +89,7 @@ Alternative fingerprinting methods can be explored for this:
 scale-invariant feature points, or feature points combined with  
 region-based descriptors.
 
-* The limited temporal information restricts the ability of the  
+*The limited temporal information restricts the ability of the  
 system to differentiate between clips that share a significant  
 portion of frames in common.  In other words, two commercial  
 spots are often composed from common sequences only edited  
@@ -92,12 +97,14 @@ differently. Unfortunately, the real-time nature of the problem
 prohibits a second pass of the data. Recognition decisions are  
 constrained to only looking at past frames.
 
-* Given the success of convolutional neural nets for image  
+*Given the success of convolutional neural nets for image  
 recognition tasks, it would be interesting to add in a  
 recurrence property to better model a sequence of frames.  
 Previous work in extracting image fingerprints from convolutional  
-network models shows promise in differentiating images: 
+network models shows promise in differentiating images:
+
 [pyConvnetPhash](https://blog.phash.org/posts/concise-image-descriptor).  
+
 However, this is an extremely slow approach when dealing with 30  
 fps streams. Recurrent Neural Networks could possibly add in  
 some temporary information, but might be limited to video clips  
