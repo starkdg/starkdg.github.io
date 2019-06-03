@@ -69,6 +69,16 @@ aside > p {
 	color: LightSlateBlue;
 }
 
+div.viewport {
+	overflow: scroll;
+	height: 250px;;
+	width: 80%;
+	outline-style: double;
+	background-color: BlanchedAlmond;
+}
+
+
+
 /* Style page content */
 .main {
   margin-left: 160px; /* Same as the width of the sidebar */

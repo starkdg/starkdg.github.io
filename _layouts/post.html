@@ -8,6 +8,9 @@ layout: default
   {%if page.use_math %}
     {% include mathjax_support %}
   {% endif %}
+  {% if page.use_js %}
+    {% include custom-scripts.html %}
+  {% endif %}
 </head>
 <body>
   {% include navigation.html %}
