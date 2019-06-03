@@ -4,7 +4,7 @@ title: "ClipSeekr&trade;: Video Clip Recognition System"
 description: Video Shot Detection
 author: starkdg
 date: 2019-06-01
-custom-javascript-list: "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"
+custom-javascript-list: ["https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js","/assets/js/viewhtml.js"]
 use_js: true
 use_math: true
 tags: [video, c++, video-recognition]
@@ -62,7 +62,7 @@ real-time.
 
 ## A few notes for further study:
 
-* While the fingerprinting method is fairly robust to many distortions, it is not
+*While the fingerprinting method is fairly robust to many distortions, it is not
 robust to changes in the screen format.  In other words, many broadcast streams
 manipulate the screen format to include varying amounts of black space in the margins.
 Also, the presence of various logos and other textual occlusions further obfuscate
@@ -70,13 +70,13 @@ the spatial information of the frames.  Alternative fingerprinting methods can b
 explored for this: scale-invariant feature points, or feature points combined with
 region-based descriptors.
 
-* The limited temporal information restricts the ability of the system to differentiate
+*The limited temporal information restricts the ability of the system to differentiate
 between clips that share a significant portion of frames in common.  In other words,
 two commercial spots are often composed from common sequences only edited differently.
 Unfortunately, the real-time nature of the problem prohibits a second pass of the data.
 Recognition decisions are constrained to only looking at past frames.
 
-* Given the success of convolutional neural nets for image recognition tasks, it would
+*Given the success of convolutional neural nets for image recognition tasks, it would
 be interesting to add in a recurrence property to better model a sequence of frames.
 Previous work in extracting image fingerprints from vonvolutional network models shows
 promise in differentiating images [pyConvnetPhash](https://blog.phash.org/posts/concise-image-descriptor).
@@ -87,13 +87,4 @@ to video clips of a fixed set length.
 Thanks you for your time in reading this post.  Comments and suggestions are welcome.
 
 [Comments and Suggestions](https://github.com/starkdg/clipseekr/issues)
-
-
-<script>
-$( document ).ready(function() {
-	$("#includedContent").load("/resources/post_3/tbs_2019-05-18_15:05_annotations_dt10.html");
-});
-</script>
-
-
 
