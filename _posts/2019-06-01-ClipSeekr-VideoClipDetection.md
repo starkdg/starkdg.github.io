@@ -59,11 +59,10 @@ along with their timestamps.
 A black font represents correct detections; a red font  
 represents false positives; and blue is for false negatives.
 
-
-
 <div class="viewport" id="includedContent"></div>
-
-
+\\
+\\
+\\
 
 The only one that failed to be detected was a McDonald's  
 commercial, called "Uber Eats".  The only thing noteworthy  
