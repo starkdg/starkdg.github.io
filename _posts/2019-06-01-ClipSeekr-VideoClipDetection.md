@@ -62,11 +62,11 @@ represents false positives; and blue is for false negatives.
 <div class="viewport" id="includedContent"></div>
 \\
 \\
-\\
+\
 
 The only one that failed to be detected was a McDonald's  
 commercial, called "Uber Eats".  The only thing noteworthy  
-is that the frames seemed exceptionally dark in contrast.
+is that the frames seemed exceptionally dark in contrast.  
 Perhaps not enough definition in the fingerprints.  Another  
 noteworthy issue is the second detection of the spot called  
 "Jack Daniels".  While the first one was a correct match,  
