@@ -171,7 +171,7 @@ literally the size of the state of Texas for a year time duration.  Also, the te
 uniformly distributed random events, so larger queries will have more results to retrieve
 the more random events are inserted.  
 
-![Query Results](/resources/post_4/results.png)
+![QueryResults](/resources/post_4/results.png)
 
 
 ## Summary
