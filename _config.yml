@@ -1,5 +1,6 @@
 markdown: kramdown
 title: "PHash Blog"
+tagline: "perceptual hashing blog"
 description: "perceptual hashing information"
 theme: jekyll-theme-minimal
 url: https://starkdg.github.io
