@@ -46,7 +46,7 @@ Then, to get all distances within 5 miles of hartford-ct, just do:
 4) "easthartford-ct"
 ```
 
-To get the distance in km's between colchester-ct and mansfield-ct:
+To get the distance in miles between colchester-ct and mansfield-ct:
 
 ```
 127.0.0.1:6379> geodist myplaces colchester-ct mansfield-ct mi
