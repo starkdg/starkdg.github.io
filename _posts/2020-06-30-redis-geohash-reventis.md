@@ -172,6 +172,7 @@ be tracked with a common object identifier.
 The update command is followed by a key string, longitude, latitude, timestamp,
 an object id, and finally, a descriptive string for the update.  For example, 
 
+```
 127.0.0.1:6379> reventis.update mytracks -72.514046 41.823773 06-01-2020 8:00 100 "avery st., SW, CT"
 (integer) 2692244187721629697
 127.0.0.1:6379> reventis.update mytracks -72.679270 41.754280 06-01-2020 9:00 100 "seymour st. Htfd, CT"
