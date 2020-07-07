@@ -76,9 +76,9 @@ no doubt be highly useful.
 
 [Reventis](https://github.com/starkdg/reventis) - a portmanteau of the
 words, Redis and Events - is a Redis Module that introduces a native
-data structure capable of indexing events, or point locations in time
+data structure capable of indexing events or point locations in time
 and space.  Events can be inserted into the data structure
-by its geo-spatial coordinates along with beginning and end timestamps.
+by its geo-spatial coordinates along with beginning and ending timestamps.
 Then all events within a given geographical area and timespan can be queried.
 The sequence mirrors the geohash commands.  Here is an example:
 
@@ -125,10 +125,7 @@ Windsor, Ct for June 1, 2020.
 ```
 
 
-### Categories
-
-
-What if you want to retrieve only certain kinds of events?
+### What if you want to retrieve only certain kinds of events?
 
 With Reventis, inorder to further filter events, you can assign
 integer categories 1 to 64 to each event. Multiple categories per event are possible.
@@ -165,7 +162,7 @@ key for categories 10 and 20.
 ## Object Tracing 
 
 
-By attaching an object ID number to an event, Reventis provides the ability to
+By attaching an object integer identifier to an event, Reventis provides the ability to
 track objects. With the `update` command, a new event is inserted to the data
 structure with a given object ID provided.  In this way, a chain of events can
 be tracked with a common object identifier.
@@ -271,21 +268,24 @@ of indexed events; the y-axis is response time in milliseconds.  As you can see,
 stabilize to under 1ms over increasing N.  Query #4 does not stabilize, because it is
 literally the size of the state of Texas for over a year in time duration.  Also, the test adds
 uniformly distributed random events, so larger query regions  do contain proportionally  more
-retrieved results.  This does not necessarily happen in practice, since data is usually more clustered. 
+retrieved results.  However, this ordinarily does not happen in practice,
+since actual data is usually more clustered. 
 
 ![QueryResults](/resources/post_4/results.png)
 
 
 ## Summary
 
-
 Reventis introduces a robust set of commands for the management of spatio-temporal point
-data, and presents an efficient and valuable solution for any applications that need to manage
+data, and presents an efficient and invaluable solution for any applications that need to manage
 location-based data.
 
 More documentaion on the various commands is available [here](https://github.com/starkdg/reventis).
 A client-side library of functions is also available to automate interactions with Redis.  
 
+There is also an interesting application of Reventis to the GDELT - Global Database of Events, Locations
+and Tones - dataset on the project README.  I'll leave further exploration for a future
+blog post.  
 
 
 
