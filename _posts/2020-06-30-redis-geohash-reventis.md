@@ -271,7 +271,7 @@ of indexed events; the y-axis is response time in milliseconds.  As you can see,
 stabilize to under 1ms over increasing N.  Query #4 does not stabilize, because it is
 literally the size of the state of Texas for over a year in time duration.  Also, the test adds
 uniformly distributed random events, so larger query regions  do contain proportionally  more
-retrieved results.  This does necessarily happen in practice, since data is usually more clustered. 
+retrieved results.  This does not necessarily happen in practice, since data is usually more clustered. 
 
 ![QueryResults](/resources/post_4/results.png)
 
