@@ -5,7 +5,7 @@ description: "perceptual hashing information"
 theme: jekyll-theme-minimal
 domain: phash.dev
 url: https://starkdg.github.io
-repository_url: starkdg/phashblog
+repository_url: starkdg/starkdg.github.io
 permalink: /posts/:title
 email: starkdg@gmx.com
 show_downloads: false
