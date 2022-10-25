@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<head>
+  {%if page.use_math %}
+    {% include mathjax_support %}
+  {% endif %}
+  {% if page.use_js %}
+    {% include custom-scripts.html %}
+  {% endif %}
+  {% feed_meta %}
+  {% seo %}
+</head>
+<body>
+  {% include navigation.html %}
+  <div>
+	<h1>{{ page.title }}</h1>
+	<p>{{ page.date | date_to_string }} - by {{ page.author }}</p>
+  </div>
+  {{ content }}
+</body>
+

@@ -1,0 +1,16 @@
+markdown: kramdown
+title: "PHash Blog"
+tagline: "Perceptual Hash Coding"
+description: "perceptual hashing information"
+theme: jekyll-theme-minimal
+domain: phash.dev
+url: https://starkdg.github.io
+repository_url: starkdg/phashblog
+permalink: /posts/:title
+email: starkdg@gmx.com
+show_downloads: false
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag  
